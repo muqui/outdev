@@ -4,6 +4,132 @@
 <body>
 <header th:insert="fragments.html :: nav"></header>
 <!-- Page content goes here -->
-<h1>Staris</h1>
+<div class="container">
+  <div class="row">
+   <div class= col-6>
+     <h1>Climbing Stairs</h1>
+     <p lang="en-US" class="western" align="center" style="margin-left: 0.01in; text-indent: -0in; margin-bottom: 0.22in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Problem
+1 (Climbing stairs)</b></font></font></p>
+<p lang="en-US" class="western" align="justify" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.09in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">You
+are climbing a staircase. It takes n steps to reach the top.</font></font></p>
+<p lang="en-US" class="western" align="justify" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Each
+time you can either climb 1 or 2 steps. In how many distinct ways can
+you climb to the top? </font></font>
+</p>
+<p lang="en-US" class="western" align="center" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>How
+to solve</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>We
+will use permutations with repetition.</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Example
+</b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Input
+8</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Solve
+it:</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>First
+</b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 1 1 </b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Then
+become in 2 the last two ones.</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>sum
+is equal to 8, we make this process until have only 2 or just one.</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 2 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>11
+2 2 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>2
+2 2 2 </b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>We
+have as below</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 1 1 </b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 2 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>11
+2 2 2</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>2
+2 2 2 </b></font></font>
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>We
+calculate use permutations with repetition every line.</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 1 1 = 1</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 1 1 2    = 7</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1
+1 1 1 2 2	   =15	</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>11
+2 2 2           =10</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>2
+2 2 2             =1</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Finally,
+we make sum.</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Output
+= 34</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<br/>
+<br/>
+
+</p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Constraints:</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>1&lt;=
+n &lt;=45</b></font></font></p>
+<p lang="en-US" class="western" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<br/>
+<br/>
+
+</p>
+<table class="table">
+<tr th:each="data, iterstat: ${result}">
+     <td th:text="${data}" th:id="|td${iterstat.index}|"></td>
+  </tr>
+</tr>
+</table>
+			</div>
+  </div>
+</div>
+
 </body>
 </html>
