@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments.html :: headerfiles"></head>
+<body>
+<header th:insert="fragments.html :: nav"></header>
+<!-- Page content goes here -->
+<div class="container px-4 pt-5">
+  <div class="row gx-5">
+    <div class="col-md-6 offset-md-3">
+     <div class="p-3 border bg-light">
+        <form  >
+  <div class="mb-3 pt-3">
+    
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Full Name" >
+  
+  </div>
+  <div class="mb-3 pt-3">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
+  </div>
+  <div class="mb-3 pt-3">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="confirm Password" >
+  </div>
+  <div class="mb-3 pt-3">
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email" >
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+     </div>
+    </div>
+   
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
