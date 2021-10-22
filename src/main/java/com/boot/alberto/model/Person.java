@@ -1,24 +1,26 @@
 package com.boot.alberto.model;
 
 public class Person {
-	String username;
+	String usuario;
 	String password;
-	String email;
-	
+	String correo;
 	
 	public Person() {
 		
 	}
-	public Person(String username, String password, String email) {
-		this.username = username;
+	
+	public Person(String usuario, String password, String correo) {
+		
+		this.usuario = usuario;
 		this.password = password;
-		this.email = email;
+		this.correo = correo;
 	}
-	public String getUsername() {
-		return username;
+
+	public String getUsuario() {
+		return usuario;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 	public String getPassword() {
 		return password;
@@ -26,12 +28,18 @@ public class Person {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getEmail() {
-		return email;
+	public String getCorreo() {
+		return correo;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setCorreo(String correo) {
+		this.correo = correo;
 	}
+	
+	
+	
+	
+	
+	
 	
 
 }

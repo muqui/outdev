@@ -12,7 +12,7 @@
     <div class="col-md-6 col-12 offset-md-3">
      <div class="p-3 border bg-light home-text">
      <h2 class="fs-1 row justify-content-center">Sign Up</h2>
-		<form action=""  id="formulario">
+		<form action="#"  id="formulario"  th:action="@{/register}" method="post" th:object="${user}">
 		<div class="mb-3  pt-3">
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo pt-3" id="grupo__usuario">
@@ -59,7 +59,7 @@
 			</div>
 			 
 			<div class="formulario__grupo formulario__grupo-btn-enviar  pt-3">
-				<button type="submit" class="btn btn-primary">Enviar</button>
+				<button type="submit" class="btn btn-primary" onclick="return validate()" >Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 			</div>
@@ -69,11 +69,11 @@
 </div>
 </div>
 </div>
-	<script src="js/formulario.js"></script>
+	<script src="js/form.js"></script>
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script th:src="@{/js/bootstrap.bundle.min.js}" src="../static/js/bootstrap.bundle.min.js"></script>
-<script th:src="@{/js/formulario.js}" src="../static/js/formulario.js"></script>
+
 </body>
 </html>

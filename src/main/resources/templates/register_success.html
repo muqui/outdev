@@ -1,0 +1,40 @@
+ <link th:href="@{~/css/bootstrap.min.css}" rel="stylesheet"  href="../static/css/bootstrap.min.css" >
+    <link th:href="@{~/css/fontawesome/css/all.css}" rel="stylesheet">
+       <link th:href="@{~/css/estilos.css}" rel="stylesheet"  href="../static/css/estilos.css" >
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments.html :: headerfiles"></head>
+<body>
+<header th:insert="fragments.html :: nav"></header>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+<style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div align="center">
+    <h2>Registration Succeeded!</h2>
+    <span>name:</span><span th:text="${person.usuario}"></span><br/>
+    <span>Email:</span><span th:text="${person.password}"></span><br/>
+    <span>Password:</span><span th:text="${person.correo}"></span><br/>
+</div>
+</body>
+</html>
+
+</body>
+</html>
