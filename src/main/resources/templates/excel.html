@@ -4,7 +4,206 @@
 <body>
 <header th:insert="fragments.html :: nav"></header>
 <!-- Page content goes here -->
-<h1>excel</h1>
+<div class="container">
+  <div class="row">
+   		<div class="col-md-6 col-12 offset-md-3">
+   		<h1>excel</h1>
+   		<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Problem
+2 (Excel Sheet Column Number)</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Given
+a string columnTitle that represents the column title as appear in
+Excel Sheet, return its </b></font></font>
+</p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>corresponding
+column number.</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>For
+example:</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>A
+-&gt;1</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>B-&gt;2</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>C-&gt;3</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Input:
+columnTitle=”AB”</b></font></font></p>
+<p style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Output:
+28 </b></font></font>
+</p>
+<p align="center" style="margin-left: 0.02in; text-indent: 0in; margin-bottom: 0.08in; line-height: 110%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>How
+to solve</b></font></font></p>
+<h1 lang="es-MX" class="western" style="margin-top: 0.21in; margin-bottom: 0.21in; line-height: 0.43in; background: #ffffff">
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><span lang="en-US"><span style="font-weight: normal">To
+convert columnTitle to number we must </span></span></font></font><font color="#000000"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span lang="en-US"><span style="font-weight: normal">Raise
+Power and sum.</span></span></font></font></font></h1>
+<h1 lang="es-MX" class="western" style="margin-top: 0.21in; margin-bottom: 0.21in; line-height: 0.43in; background: #ffffff">
+<font color="#000000"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span lang="en-US"><span style="font-weight: normal">C=
+character value.</span></span></font></font></font></h1>
+<center>
+	<table width="100%" cellpadding="7" cellspacing="0">
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<tr valign="top">
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>6</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>5</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>4</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>3</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>2</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>1</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>0</sup>)
+				x c</font></font></font></h1>
+			</td>
+		</tr>
+	</table>
+</center>
+<h1 lang="es-MX" class="western" align="center" style="margin-top: 0.21in; margin-bottom: 0.21in; line-height: 0.43in; background: #ffffff">
+<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt"><span lang="en-US">Example
+XFD</span></font></font></font></h1>
+<center>
+	<table width="100%" cellpadding="7" cellspacing="0">
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<col width="37*"/>
+
+		<tr valign="top">
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>2</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>1</sup>)
+				x c</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>0</sup>)
+				x c</font></font></font></h1>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 15pt">(26<sup>2</sup>)
+				x 24</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>1</sup>)
+				x 6</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">(26<sup>0</sup>)
+				x 4</font></font></font></h1>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">0</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 15pt">16224</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">156</font></font></font></h1>
+			</td>
+			<td width="14%" style="border: 1px solid #000000; padding: 0in 0.08in"><h1 class="western" align="left" style="margin-top: 0.21in; orphans: 2; widows: 2">
+				<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt">4</font></font></font></h1>
+			</td>
+		</tr>
+	</table>
+</center>
+<h1 lang="es-MX" class="western" style="margin-top: 0.21in; margin-bottom: 0.21in; line-height: 0.43in; background: #ffffff"><a name="_GoBack"></a>
+<font color="#000000"><font face="Arial, serif"><font size="4" style="font-size: 16pt"><span lang="en-US">result
+ 16224 + 156 + 4   =16384</span></font></font></font></h1>
+ <h3>random sample of 100 items</h3>
+   			<table class="table">
+<tr th:each="data, iterstat: ${result}">
+     <td th:text="${data}" th:id="|td${iterstat.index}|"></td>
+  </tr>
+</tr>
+</table>
+   		</div>
+   </div>
+</div>
+
+
 </body>
 
 
